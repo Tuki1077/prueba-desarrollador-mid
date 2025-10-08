@@ -176,7 +176,7 @@ CREATE TABLE Pedidos (
 ## 1. ¿Qué ventajas tiene Python para análisis de datos?
 
 ### Sintaxis Simple y Legible
-- **Fácil aprendizaje**: Sintaxis clara e intuitiva, ideal para científicos y analistas sin formación profunda en programación
+- **Fácil aprendizaje**: Sintaxis clara e intuitiva
 - **Código limpio**: Menos líneas de código para realizar tareas complejas comparado con otros lenguajes
 - **Mantenibilidad**: El código es fácil de leer, entender y modificar
 
@@ -188,7 +188,7 @@ CREATE TABLE Pedidos (
 
 ### Datos
 - **Automatización**: Se puede usar python para limpiar, procesar, analizar y visualizar datos. 
--**Integración**: Se conecta fácilmente con SQL, Excel, JSON, APIs y otras tecnologías. 
+- **Integración**: Se conecta fácilmente con SQL, Excel, JSON, APIs y otras tecnologías. 
 
 
 ## 2. Diferencia entre Lista y Diccionario
@@ -212,7 +212,7 @@ print(len(frutas))      # 5 - longitud de la lista
 ```
 
 ### Diccionario (Dictionary)
-- **Definición**: Colección no ordenada y mutable de pares clave-valor únicos
+- **Definición**: Colección no ordenada y mutable de clave-valor únicos
 - **Características**:
   - **Claves únicas**: No puede haber claves duplicadas
   - **Acceso por clave**: Se accede usando claves en lugar de índices
