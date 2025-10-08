@@ -73,12 +73,12 @@ document.body.appendChild(nuevoParrafo)
 
 
 ### 
--**GET**: Utilizamos GET para obtener información. El uso típico es para hacer consultas o búsquedad sin cambiar datos. 
+- **GET**: Utilizamos GET para obtener información. El uso típico es para hacer consultas o búsquedad sin cambiar datos. 
 - **Características**:
   - **Forma de envío**: Los datos se envían en la URL.
   - **Ejemplo**: pagina.php?nombre= Juan&edad=24
 
--**POST**: Utilizamos POST para enviar o guardar información. Su uso típico son para modificar datos como un login, registros, etc...
+- **POST**: Utilizamos POST para enviar o guardar información. Su uso típico son para modificar datos como un login, registros, etc...
 
 - **Características**:
   - **Forma de envío**:  En el cuerpo de la solicitud HTTP.
@@ -94,7 +94,7 @@ Edad: 24
 
 ###
 
--***¿Por qué?**: sirve para proteger contraseñas de usuario antes de guardarla en base de datos. Es importante ya que podemos encriptar contraseñas para nos guardarlas como tal en base de datos y asi protegemos credenciales. 
+- **¿Por qué?**: sirve para proteger contraseñas de usuario antes de guardarla en base de datos. Es importante ya que podemos encriptar contraseñas para nos guardarlas como tal en base de datos y asi protegemos credenciales. 
 
 **Ejemplo:**
 ```PHP
@@ -104,7 +104,7 @@ $clave_segura = password_hash($clave, PASSWORD_DEFAULT);
 mysqli_query($conn, "INSERT INTO usuarios (usuario, clave) VALUES ('$usuario', '$clave_segura')");
 ```
 
--**Resultado**: Sería una cadena irreconocible de letras, simbolos y números. 
+- **Resultado**: Sería una cadena irreconocible de letras, simbolos y números. 
 
 
 
@@ -122,7 +122,7 @@ SELECT u.nombre, p.NumeroPedido
 FROM Clientes c 
 INNER JOIN Pedidos p ON c.IdCliente = p.IdCliente;
 ```
-*Solo muestra usuarios que tienen posts.*
+*Solo muestra clientes que tienen pedidos.*
 
 ### LEFT JOIN (LEFT OUTER JOIN)
 - **Definición**: Muestra todas las filas de la izquierda, aunque no hayan coincidencia en la tabla de la derecha. 
