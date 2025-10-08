@@ -18,7 +18,6 @@ prueba-desarrollador-mid/
 ├── landing/assets/logo.svg     # Logo SVG
 ├── api/registro.php            # Backend API
 ├── database_setup.sql          # Script de BD
-├── run_tests.sh               # Script de pruebas
 └── README.md                  # Documentación
 ```
 
