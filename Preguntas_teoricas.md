@@ -34,7 +34,7 @@
 "5" == 5 
 ```
 
--**Ejemplo**: Este enunciado es falso dado que aunque 5 = 5, uno es string y el otro es int, por lo tanto es falso. 
+- **Ejemplo**: Este enunciado es falso dado que aunque 5 = 5, uno es string y el otro es int, por lo tanto es falso. 
 ```JS
 "5" === 5 
 ```
