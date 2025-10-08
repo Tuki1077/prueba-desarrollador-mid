@@ -148,8 +148,8 @@
 
         /* Products Grid */
         .products-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            display: flex;
+            flex-wrap: wrap;
             gap: 2rem;
             margin-top: 2rem;
         }
@@ -159,6 +159,8 @@
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            flex: 0 0 300px;
+            align-self: flex-start;
         }
 
         .category-header {
@@ -273,7 +275,11 @@
             }
 
             .products-grid {
-                grid-template-columns: 1fr;
+                flex-direction: column;
+            }
+            
+            .product-category {
+                flex: 1 1 100%;
             }
 
             .social-links {

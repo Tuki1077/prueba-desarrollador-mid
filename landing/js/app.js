@@ -237,17 +237,39 @@ document.addEventListener('DOMContentLoaded', function() {
 function toggleCategory(header) {
     const icon = header.querySelector('.collapse-icon');
     const productsList = header.nextElementSibling;
+    const isExpanded = productsList.classList.contains('expanded');
     
-    if (productsList.classList.contains('expanded')) {
+    // Solo afectar la sección clickeada
+    if (isExpanded) {
+        // Cerrar
         productsList.classList.remove('expanded');
         icon.classList.remove('rotated');
         icon.textContent = '▼';
     } else {
+        // Abrir
         productsList.classList.add('expanded');
         icon.classList.add('rotated');
         icon.textContent = '▲';
     }
 }
+
+/**
+ * Initialize collapse states
+ */
+document.addEventListener('DOMContentLoaded', function() {
+    // Asegurar que todos los collapses empiecen cerrados
+    const allProductsLists = document.querySelectorAll('.products-list');
+    const allIcons = document.querySelectorAll('.collapse-icon');
+    
+    allProductsLists.forEach(productsList => {
+        productsList.classList.remove('expanded');
+    });
+    
+    allIcons.forEach(icon => {
+        icon.classList.remove('rotated');
+        icon.textContent = '▼';
+    });
+});
 
 /**
  * Smooth scroll for navigation links
