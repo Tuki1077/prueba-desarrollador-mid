@@ -45,7 +45,6 @@
 ###
 - **¿Que es?**: DOM es una representación del contenido HTML de una página. Cada etiquea de HTML se convierte en un elemento que luego le da acceso a JS para manipularlo. 
 
--**Ejemplo**: Este enunciado es falso dado que aunque 5 = 5, uno es string y el otro es int, por lo tanto es falso. 
 ```HTML
 <body>
     <h1 id = "titulo-pagina">Hola mundo</h1>
