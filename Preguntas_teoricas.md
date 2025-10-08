@@ -28,8 +28,8 @@
 ## 3. Diferencia entre usar == y === en JS
 
 ###
-- ***Diferencias**: == compara solo valores y hace conversiones de tipo automaticamente. Mientras que === compara valore y tipo de dato al mismo tiempo. 
--**Ejemplo**: Este enunciado es True dado que esta comparando si 5 es igual a 5 sin importar que uno sea string y el otro sea int.
+- ***Diferencias**: == compara solo valores y hace conversiones de tipo automaticamente. Mientras que === compara valor y tipo de dato al mismo tiempo. 
+- **Ejemplo**: Este enunciado es True dado que esta comparando si 5 es igual a 5 sin importar que uno sea string y el otro sea int.
 ```JS
 "5" == 5 
 ```
@@ -90,7 +90,7 @@ Correo: juan@ejemplo.com
 Edad: 24
 ```
 
-## 2. ¿Por qué es importante usar password_has()?
+## 2. ¿Por qué es importante usar password_hash()?
 
 ###
 
